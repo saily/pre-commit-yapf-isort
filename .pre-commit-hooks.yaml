@@ -1,0 +1,6 @@
+- id: yapf-isort
+  name: Run yapf + isort
+  description: Let yapf format your python code but isort sort your imports.
+  entry: pre_commit_hooks/yapf-isort.sh
+  language: script
+  files: \.py$
