@@ -3,6 +3,10 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
+if [ -n $VIRTUAL_ENV ]; then
+  PATH=$VIRTUAL_ENV/bin:$PATH
+fi
+
 DEBUG=${DEBUG:=0}
 [[ $DEBUG -eq 1 ]] && set -o xtrace
 
