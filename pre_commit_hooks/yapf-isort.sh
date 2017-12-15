@@ -3,6 +3,8 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
+source bin/activate
+
 DEBUG=${DEBUG:=0}
 [[ $DEBUG -eq 1 ]] && set -o xtrace
 
