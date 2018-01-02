@@ -20,7 +20,7 @@ if [ ! -z "${WORKON_HOME}" ] && [ -f "${WORKON_HOME}/${PWD##*/}" ]; then
   if ! which workon &>/dev/null; then
     >&2 echo 'workon command not found'
     exit 1
-  if
+  fi
   workon "${PWD##*/}"
 fi
 
