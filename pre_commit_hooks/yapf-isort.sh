@@ -32,7 +32,7 @@ fi
 yapf -i -vv "$@"
 
 echo 'Begin isort'
-if ! which yapf &>/dev/null; then
+if ! which isort &>/dev/null; then
   >&2 echo 'isort command not found'
   exit 1
 fi
